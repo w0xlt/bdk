@@ -37,7 +37,7 @@ bip39 = { version = "1.0.1", optional = true }
 bitcoinconsensus = { version = "0.19.0-3", optional = true }
 
 # Needed by bdk_blockchain_tests macro and the `rpc` feature
-bitcoincore-rpc = { version = "0.16", optional = true }
+bitcoincore-rpc = { git = "https://github.com/w0xlt/rust-bitcoincore-rpc", branch = "update_to_0_14", optional = true }
 
 # Platform-specific dependencies
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
